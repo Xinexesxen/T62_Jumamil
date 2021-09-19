@@ -1,0 +1,33 @@
+/* C++ PROGRAM TO CALCULATE THE DEDREES A BALL ROTATES IN A SECOND IF IT'S SPINNING 3000 RPM */
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    //Variables
+    int
+    DegreesPerSecond = 6,
+    RevPerMinute = 3000,
+    X; //<-- Problem
+    
+    
+
+    //Commands
+    cout << "\n\n\t    [   A BALL IS SPINNING   ] \n";
+    cout << "\n\n\t    The Ball Creates " << RevPerMinute << " Revolutions.\n";
+    cout << "\n\t    1 Revolution Per Minute = " << DegreesPerSecond << " Degress Per Second.\n";
+
+    
+    //Conversion
+    X = RevPerMinute * DegreesPerSecond;
+    
+    
+    //Result
+    cout << "\n\t    The Ball Rotates " << X << " Degress In A Second. \n\n";
+
+    
+    return 0;
+}
