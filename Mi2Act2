@@ -1,0 +1,106 @@
+/* C++ SIMPLE CASHIER PROGRAM */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+
+{
+    
+    cout << endl << endl;
+    
+    cout << "\t\t\t  [ ⁕  LOLI Pop  ⁕ ] " << endl << endl << endl; 
+    
+    
+    //Variables
+    int
+    Choice,
+    Payment,
+    Change,
+    Price;
+    
+    string
+    Lollipop;
+    
+    
+    
+    cout << "\t Select Your Order " << endl << endl; //<-- Asks the user to input order. 
+    
+    
+    //Choices
+    cout << "\t [1] Taiga " << endl;
+    cout << "\t [2] Aria " << endl;
+    cout << "\t [3] Shana " << endl << endl << endl;
+    
+    
+    //Command 1
+    cout << "\t Choice : "; //<-- Asks the user to input order. 
+    cin >> Choice;
+       
+    cout << endl;
+    
+    
+    //Process
+      switch(Choice)
+    {
+        case 1:
+            Price = 1000;
+            Lollipop= " Taiga ";
+        break;
+
+        case 2:
+            Price = 1500;
+            Lollipop = " Aria ";
+        break;
+
+        case 3:
+            Price = 2000;
+            Lollipop = " Shana ";
+        break;
+
+        default:
+            
+            cout << "\t Invalid Input! "; //<-- If user enters isn't one of the choices above. 
+            return 0;
+    } 
+
+
+
+    //Command 2
+    cout << "\t Input Payment: " ; //<-- Asks the user to input payment. 
+    cin >> Payment;
+    
+
+    cout << endl;
+    
+    
+    //Change Formula
+    Change = Payment - Price;
+
+
+    //Results 
+      if (Payment > Price)
+    {
+        cout << "\t You Have Purchased [ " << Lollipop << " ] (●ˇ∀ˇ●) !" << endl << endl;
+        cout << "\t Change: " << Change << endl << endl; //<-- If payment is more than price, prints change.
+    }
+    
+    
+    
+    else if (Payment == Price)
+    {
+         cout << "\t You Have Purchased [ " << Lollipop << " ] (●ˇ∀ˇ●) !" << endl << endl; //<-- If payment is enough, no change. 
+    }
+    
+    
+    
+    else
+    {
+        cout << "\t You Don't Have Enough Funds!" << endl << endl; //<-- If payment isn't enough. 
+    }
+
+    return 0;
+    
+}
