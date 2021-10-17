@@ -1,0 +1,73 @@
+
+/* C++ PROGRAM COLLATZ CONJECTURE*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() 
+
+{
+     
+     
+    //Variable
+    int 
+    Number;
+    
+
+    cout << endl << endl;
+    
+    cout << "\t\t  [  COLLATZ CONJECTURE  ]" << endl; //<-- Inputs Any Positive Integer. If Odd 3X + 1 || If Even X / 2
+    
+    cout << endl << endl;
+
+    
+    
+    //Command 1
+    cout << "\t\t Input Any Positive Integers : "; //<-- Asks the user to input any positive integer.
+    cin >> Number;
+    
+     cout << endl << endl;
+     
+
+   //Process 1 (Body)
+    do
+    
+      {
+           //Result 1
+           cout  <<  "\t\t Current Given Value is " << Number << endl;
+            
+            
+            
+            //Using If-Else Statement
+            if (Number % 2 == 0)  //<-- Identifies and Executes if Number is Even. 
+               
+                Number = Number / 2;
+            
+             
+                
+                
+           else 
+
+                Number = 3 * Number + 1; //<-- Executes if Number is Odd. 
+                
+      }
+    
+
+    
+    //Process 2 (Condition)
+    while(Number != 1);
+            
+             //Result 2
+              cout <<  "\t\t Current Given Value is " << Number << endl << endl;
+
+            
+            
+  return 0;
+  
+}
+
+
+
+
