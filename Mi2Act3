@@ -1,0 +1,59 @@
+/* C++ PROGRAM COLLATZ CONJECTURE*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() 
+
+{
+     
+     
+    int 
+    Number;
+    
+
+     cout << endl << endl;
+    
+    cout << "\t\t  [  COLLATZ CONJECTURE  ]" << endl; 
+    
+    cout << endl << endl;
+
+    
+    cout << "\t\t Input Any Positive Integers : "; 
+    cin >> Number;
+    
+     cout << endl << endl;
+     
+
+
+    do
+    
+    {
+            
+           cout  <<  "\t\t Current Given Value is " << Number << endl;
+            
+            
+            if (Number % 2 == 0) 
+               
+                Number = Number / 2;
+                   
+            else
+            
+                Number = 3 * Number + 1;
+                
+                
+                
+    }
+    
+    while(Number != 1);
+            
+              cout <<  "\t\t Current Given Value is " << Number << endl << endl;
+            
+  
+}
+
+
+
+
